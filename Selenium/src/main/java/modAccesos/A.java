@@ -6,8 +6,8 @@ public class A {
 		System.out.println("Cool Testers");
 	}
 	
-	private void mostrar1() {
-		System.out.println("Cool Testers");
+	public void mostrar1() {
+		System.out.println("Cool Testers2");
 	}
 	
 }
