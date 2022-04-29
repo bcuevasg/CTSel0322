@@ -48,7 +48,8 @@ public class Tarea_042322 {
 		// System.out.println("El valor en la posicion: " + i + " es: " +
 		// firstLvlMenu.get(i).getText());
 		// }
-
+		
+		//seleccionando la opcion del Directory 
 		firstLvlMenu.get(8).click();
 
 		// Declarando Search field por nombre en directorio
@@ -62,8 +63,10 @@ public class Tarea_042322 {
 
 		searchName.sendKeys("Nathan");
 		// Thread.sleep(2000);
+		
 		drpdwnJobTitle.selectByVisibleText("Sales Representative");
 		Thread.sleep(2000);
+		
 		drpdwnDirctryLocation.selectByVisibleText("  United States");
 		Thread.sleep(2000);
 
@@ -72,21 +75,29 @@ public class Tarea_042322 {
 
 		direcotrySearch.click();
 
+		
+		//
 		String searchNameResult = driver.findElement(By.id("resultTable")).getText();
+		String searchNameResult2 = driver.findElement(By.xpath("//*[@id=\"resultTable\"]/tbody/tr[2]/td[2]/ul/li[1]/b")).getText();// same as line 78 but with xpath
+		
+		
+		
 		// System.out.println(searchNameResult);
 
-		boolean msj = searchNameResult.contains("Nathan Elliot");
+		boolean msj = searchNameResult2.contains("Nathan Elliot");
 
 		if (msj) {
 			System.out.println("El nombre de la persona SI es Nathan Elliot");
 		} else {
 			System.out.println("ERROR: El nombre de la persona NO es Nathan Elliot");
 		}
-		
-		System.out.println("La informacion encontrada fue:\n" + searchNameResult);
-		
-		//WebElement closeWait = new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.textMatches(searchNameResult, "Nathan Elliot"));
-		
+
+		System.out.println("La informacion encontrada fue:\n" + searchNameResult2);
+
+		// WebElement closeWait = new WebDriverWait(driver,
+		// Duration.ofSeconds(10)).until(ExpectedConditions.textMatches(searchNameResult,
+		// "Nathan Elliot"));
+
 		driver.quit();
 	}
 
