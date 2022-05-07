@@ -12,8 +12,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class WrapClass {
 
-	public static void sendKeys(WebElement WebelEmentUI, String textToSend) {
-		WebelEmentUI.sendKeys(textToSend);
+	public static void sendKeys(WebElement WebElementUI, String textToSend) {
+		WebElementUI.sendKeys(textToSend);
 	}
 
 	public static void click(WebElement WebElementUI) {
@@ -33,8 +33,6 @@ public class WrapClass {
 		File srcFile = ((TakesScreenshot)webdriver).getScreenshotAs(OutputType.FILE);
 		//Establecer Ruta donde se guarda el screenshot
 		String screenshotPath = "./test-output/ExecutionResults";
-		
-		
 		
 		try {
 			FileHandler.createDir(new File(screenshotPath));
