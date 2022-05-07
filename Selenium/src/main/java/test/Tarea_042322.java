@@ -77,7 +77,7 @@ public class Tarea_042322 {
 
 		
 		//
-		String searchNameResult = driver.findElement(By.id("resultTable")).getText();
+		//String searchNameResult = driver.findElement(By.id("resultTable")).getText();
 		String searchNameResult2 = driver.findElement(By.xpath("//*[@id=\"resultTable\"]/tbody/tr[2]/td[2]/ul/li[1]/b")).getText();// same as line 78 but with xpath
 		
 		

@@ -7,10 +7,18 @@
 			<class name="loginSuite.TC01_Login" />
 		</classes>
 	</test> <!-- Test -->
-	
+
 	<test name="TC_02">
 		<classes>
 			<class name="loginSuite.TC02_Logout" />
 		</classes>
 	</test> <!-- Test -->
+	
+	
+	<test name="TC_NameValidation">
+		<classes>
+			<class name="directorySuite.TC_SearchResults" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

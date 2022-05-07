@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="directorySearch.TC_SearchResults">
+      <class name="directorySuite.TC_SearchResults">
         <methods>
-          <include name="closeDriver"/>
-          <include name="startWebDriver"/>
           <include name="TC_NameValidation"/>
+          <include name="startWebDriver"/>
         </methods>
-      </class> <!-- directorySearch.TC_SearchResults -->
+      </class> <!-- directorySuite.TC_SearchResults -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
